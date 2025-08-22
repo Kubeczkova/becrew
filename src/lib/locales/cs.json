@@ -1,0 +1,56 @@
+{
+  "menu": {
+    "home": "Domů",
+    "about": "O mě",
+    "blog": "Blog",
+    "skills": "Zkušenosti",
+    "projects": "Projekty",
+    "experience": "Zkušenosti",
+    "contact": "Kontakt",
+    "education": "Vzdělání",
+    "other-language": "English"
+  },
+  "landing": {
+    "name": "Nikola Kubeczková",
+    "tagline": "Full Stack Developer | Building Scalable Web Solutions",
+    "intro": "I design and develop web applications that combine clean code, intuitive design, and strong architecture.",
+    "call-to-action": "View My Work",
+    "download-cv": "Stáhnout životopis"
+  },
+  "about": {
+    "professional-summary": "Professional summary",
+    "tech-background": "Tech background",
+    "personal": "Hobbies, Values..."
+  },
+  "skills": {
+    "programming": "Programovací jazyky",
+    "programming_sub": "Hlavní jazyky, ve kterých pravidelně píšu",
+    "frameworks": "Frameworky & Knihovny",
+    "frameworks_sub": "Hlavní frameworky a knihovny, které používám pro vývoj aplikací",
+    "technology": "Webové technologie",
+    "technology_sub": "Základní stavební kameny webového vývoje",
+    "tools": "Nástroje & Platformy",
+    "tools_sub": "Technologie, které používám ke správě, nasazování a spolupráci",
+    "development": "Vývojové postupy",
+    "development_sub": "Další dovednosti, které formují můj pracovní styl"
+  },
+  "projects": {
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "databases": "Databáze",
+    "dev-ops": "DevOps & Tools",
+    "other": "Ostatní"
+  },
+  "experience": {
+    "company": "Firmy"
+  },
+  "contact": {
+    "email": "email",
+    "my-email": "kubeczkova.n@gmail.com",
+    "linked-in": "Linked In",
+    "my-linked-in": "Nikola Kubeczková"
+  },
+  "education": {
+    "education": "Vzdělání"
+  }
+}

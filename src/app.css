@@ -1,0 +1,122 @@
+@import '@fontsource/fira-mono';
+
+:root[data-theme='light'] {
+	--font-body:
+		Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+		'Open Sans', 'Helvetica Neue', sans-serif;
+	--font-mono: 'Fira Mono', monospace;
+	--color-bg-blue: #91C4F2;
+	--color-bg-green: #42E2B8;
+	--color-bg-orange: #F3C98B;
+	--color-bg-white: #EBF5EE;
+	--color-theme-dark-pink: #D14B8D;
+	--color-theme-light-pink: #FF7BBF;
+	--color-text: #33363A;
+	--color-bg: #F0F4F2;
+	--column-width: 42rem;
+	--column-margin-top: 4rem;
+	font-family: var(--font-body);
+	color: var(--color-text);
+}
+
+:root[data-theme='dark'] {
+	--font-body:
+		Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+		'Open Sans', 'Helvetica Neue', sans-serif;
+	--font-mono: 'Fira Mono', monospace;
+	--color-bg-blue: #264B6E;
+	--color-bg-green: #1C6B57;
+	--color-bg-orange: #8C6239;
+	--color-bg-white: #1E1E1E;
+	--color-theme-dark-pink: #A63B6D;
+	--color-theme-light-pink: #E06FAF;
+	--color-text: #F0F4F2;
+	--color-bg: #33363A;
+	--column-width: 42rem;
+	--column-margin-top: 4rem;
+	font-family: var(--font-body);
+	color: var(--color-text);
+}
+
+body {
+	min-height: 100vh;
+	margin: 0;
+	background-attachment: fixed;
+	background-color: var(--color-bg-blue);
+	background-size: 100vw 100vh;
+	background-image:
+		linear-gradient(180deg, var(--color-bg-white) 0%, var(--color-bg-blue) 90%);
+}
+
+h1,
+h2,
+p {
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+a {
+	color: var(--color-theme-dark-pink);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1 {
+	font-size: 2rem;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1rem;
+}
+
+pre {
+	font-size: 16px;
+	font-family: var(--font-mono);
+	background-color: var(--color-bg);
+	border-radius: 3px;
+	box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
+	padding: 0.5em;
+	overflow-x: auto;
+	color: var(--color-text);
+}
+
+.text-column {
+	display: flex;
+	max-width: 48rem;
+	flex: 0.6;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+input,
+button {
+	font-size: inherit;
+	font-family: inherit;
+}
+
+button:focus:not(:focus-visible) {
+	outline: none;
+}
+
+@media (min-width: 720px) {
+	h1 {
+		font-size: 2.4rem;
+	}
+}
+
+.visually-hidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: auto;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	white-space: nowrap;
+}

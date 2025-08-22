@@ -1,0 +1,53 @@
+{
+  "menu": {
+    "home": "Home",
+    "about": "About me",
+    "blog": "Blog",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact",
+    "education": "Education",
+    "other-language": "Čeština"
+  },
+  "landing": {
+    "name": "Nikola Kubeczková",
+    "tagline": "Full Stack Developer | Building Scalable Web Solutions",
+    "intro": "I design and develop web applications that combine clean code, intuitive design, and strong architecture.",
+    "call-to-action": "View My Work",
+    "download-cv": "Download CV"
+  },
+  "about": {
+    "professional-summary": "Professional summary",
+    "tech-background": "Tech background",
+    "personal": "Hobbies, Values..."
+  },
+  "skills": {
+    "programming": "Programming Languages",
+    "programming_sub": "Core languages I write in regularly",
+    "frameworks": "Frameworks & Libraries",
+    "frameworks_sub": "Major frameworks I use to build applications",
+    "technology": "Web Technologies",
+    "technology_sub": "Fundamental building blocks of web development",
+    "tools": "Tools & Platforms",
+    "tools_sub": "Tech I use to manage, deploy, and collaborate",
+    "development": "Development Practices",
+    "development_sub": "Non-stack skills that shape how I work"
+  },
+  "projects": {
+    "portfolio_desc": "Personal portfolio website built with Svelte and TypeScript to showcase my projects and skills.",
+    "tko_desc": "Full-stack website for a local dance club, built with Vue, Vuetify, Django, and Python. I developed the frontend, backend, and deployment pipeline."
+  },
+  "experience": {
+    "company": "Company"
+  },
+  "contact": {
+    "email": "email",
+    "my-email": "kubeczkova.n@gmail.com",
+    "linked-in": "Linked In",
+    "my-linked-in": "Nikola Kubeczková"
+  },
+  "education": {
+    "education": "Education"
+  }
+}
