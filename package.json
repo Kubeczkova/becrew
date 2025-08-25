@@ -45,7 +45,7 @@
 		]
 	},
 	"dependencies": {
-		"drizzle-orm": "^0.40.0",
+		"drizzle-orm": "^0.44.0",
 		"postgres": "^3.4.5",
 		"svelte-carousel": "^1.0.25",
 		"svelte-i18n": "^4.0.1"
