@@ -46,8 +46,8 @@ importers:
         specifier: ^22
         version: 22.17.2
       drizzle-kit:
-        specifier: ^0.30.2
-        version: 0.30.6
+        specifier: ^0.31.0
+        version: 0.31.4
       eslint:
         specifier: ^9.18.0
         version: 9.32.0
@@ -967,8 +967,8 @@ packages:
   devalue@5.1.1:
     resolution: {integrity: sha512-maua5KUiapvEwiEAe+XnlZ3Rh0GD+qI1J/nb9vrJc3muPXvcF/8gXYTWF76+5DAqHyDUtOIImEuo0YKE9mshVw==}
 
-  drizzle-kit@0.30.6:
-    resolution: {integrity: sha512-U4wWit0fyZuGuP7iNmRleQyK2V8wCuv57vf5l3MnG4z4fzNTjY/U13M8owyQ5RavqvqxBifWORaR3wIUzlN64g==}
+  drizzle-kit@0.31.4:
+    resolution: {integrity: sha512-tCPWVZWZqWVx2XUsVpJRnH9Mx0ClVOf5YUHerZ5so1OKSlqww4zy1R5ksEdGRcO3tM3zj0PYN6V48TbQCL1RfA==}
     hasBin: true
 
   drizzle-orm@0.40.1:
@@ -2084,7 +2084,8 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.19.1
 
-  '@petamoriken/float16@3.9.2': {}
+  '@petamoriken/float16@3.9.2':
+    optional: true
 
   '@polka/url@1.0.0-next.29': {}
 
@@ -2398,13 +2399,12 @@ snapshots:
 
   devalue@5.1.1: {}
 
-  drizzle-kit@0.30.6:
+  drizzle-kit@0.31.4:
     dependencies:
       '@drizzle-team/brocli': 0.10.2
       '@esbuild-kit/esm-loader': 2.6.5
-      esbuild: 0.19.12
-      esbuild-register: 3.6.0(esbuild@0.19.12)
-      gel: 2.1.1
+      esbuild: 0.25.8
+      esbuild-register: 3.6.0(esbuild@0.25.8)
     transitivePeerDependencies:
       - supports-color
 
@@ -2419,7 +2419,8 @@ snapshots:
       lodash.get: 4.4.2
       lodash.isequal: 4.5.0
 
-  env-paths@3.0.0: {}
+  env-paths@3.0.0:
+    optional: true
 
   es5-ext@0.10.64:
     dependencies:
@@ -2446,10 +2447,10 @@ snapshots:
       es6-iterator: 2.0.3
       es6-symbol: 3.1.4
 
-  esbuild-register@3.6.0(esbuild@0.19.12):
+  esbuild-register@3.6.0(esbuild@0.25.8):
     dependencies:
       debug: 4.4.1
-      esbuild: 0.19.12
+      esbuild: 0.25.8
     transitivePeerDependencies:
       - supports-color
 
@@ -2703,6 +2704,7 @@ snapshots:
       which: 4.0.0
     transitivePeerDependencies:
       - supports-color
+    optional: true
 
   get-tsconfig@4.10.1:
     dependencies:
@@ -2762,7 +2764,8 @@ snapshots:
 
   isexe@2.0.0: {}
 
-  isexe@3.1.1: {}
+  isexe@3.1.1:
+    optional: true
 
   js-yaml@4.1.0:
     dependencies:
@@ -2973,7 +2976,8 @@ snapshots:
 
   shebang-regex@3.0.0: {}
 
-  shell-quote@1.8.3: {}
+  shell-quote@1.8.3:
+    optional: true
 
   sirv@3.0.1:
     dependencies:
@@ -3128,6 +3132,7 @@ snapshots:
   which@4.0.0:
     dependencies:
       isexe: 3.1.1
+    optional: true
 
   word-wrap@1.2.5: {}
 
