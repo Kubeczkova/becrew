@@ -8,6 +8,27 @@
       "when": 1755871243976,
       "tag": "0000_sparkling_tempest",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1755888130063,
+      "tag": "0001_faithful_starfox",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1755889137515,
+      "tag": "0002_blue_young_avengers",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1756154216952,
+      "tag": "0003_tearful_kabuki",
+      "breakpoints": true
     }
   ]
 }

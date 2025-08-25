@@ -3,16 +3,20 @@
 
   const education = [
     {
-      degree: "Bachelor of Information Technology",
+      degree: "Bachelor of Computer Science",
       school: "VŠB – Technical University of Ostrava",
-      short: "VSB-TUO IT",
-      years: "2018 – 2021"
+      short: "VSB-TUO FEI",
+      years: "2018 – 2022",
+      thesisUrl: "https://example.com/bachelor-thesis",
+      linkText: "View Bachelor"
     },
     {
-      degree: "Engineer of Automation and Robotics",
+      degree: "Engineer of Applied Mathematics",
       school: "VŠB – Technical University of Ostrava",
-      short: "VSB-TUO VAM",
-      years: "2021 – 2023"
+      short: "VSB-TUO FEI",
+      years: "2022 – 2024",
+      thesisUrl: "https://example.com/master-thesis",
+      linkText: "View Thesis"
     }
   ];
 </script>
@@ -23,9 +27,13 @@
   <div class="edu-grid">
     {#each education as item (item)}
       <div class="edu-item">
-        <h2>{item.degree}</h2>
-        <p class="school">{item.school} <span class="short">({item.short})</span></p>
-        <p class="years">{item.years}</p>
+        <h2 class="edu-title">{item.degree}</h2>
+        <p class="edu-years">{item.short}</p>
+        <p class="edu-school">{item.school}</p>
+        <p class="edu-years">{item.years}</p>
+        <a class="edu-link" href={item.thesisUrl} target="_blank">
+          <img src="https://flagcdn.com/w40/cz.png" alt="Czech Republic" /> {item.linkText} →
+        </a>
       </div>
     {/each}
   </div>
@@ -39,45 +47,54 @@
 
 .edu-grid {
   display: grid;
-  grid-template-columns: 1fr; /* mobile: 1 col */
-  gap: 1.5rem;
-}
-
-@media (min-width: 768px) {
-  .edu-grid {
-    grid-template-columns: repeat(2, 1fr); /* desktop: 2 cols */
-  }
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .edu-item {
-  background: var(--color-bg);
-  color: var(--color-text);
-  border-radius: 1rem;
-  padding: 1.5rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  text-align: center;
 }
 
-.edu-item h2 {
-  margin: 0 0 0.5rem;
+.edu-title {
   font-size: 1.2rem;
   font-weight: 600;
+  margin-bottom: 0.6rem;
+  color: var(--color-text);
 }
 
-.edu-item .school {
-  margin: 0 0 0.25rem;
+.edu-school {
   font-size: 0.95rem;
-  opacity: 0.9;
+  color: var(--color-text-muted, #555);
+  margin-bottom: 0.3rem;
 }
 
-.edu-item .short {
-  font-style: italic;
-  font-size: 0.9rem;
-  color: var(--color-theme-dark-pink);
-}
-
-.edu-item .years {
+.edu-years {
   font-size: 0.85rem;
   font-weight: 500;
-  color: var(--color-theme-dark-pink);
+  color: var(--color-theme-dark-pink, #e91e63);
+  margin-bottom: 0.8rem;
+}
+
+.edu-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-theme-dark-pink, #e91e63);
+  text-decoration: none;
+}
+
+.edu-link img {
+  width: 20px;
+  height: 14px;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+
+.edu-link:hover {
+  text-decoration: underline;
 }
 </style>

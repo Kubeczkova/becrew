@@ -1,42 +1,40 @@
-import { pgTable, serial, text, varchar, integer} from 'drizzle-orm/pg-core';
+import { pgTable, boolean, serial, text, varchar, integer, pgEnum, primaryKey } from 'drizzle-orm/pg-core';
 
 
-export const category = pgTable('category', {
-	id: serial('id').primaryKey(),
-	title: text('title').notNull(),
-	subtitle: text('subtitle').notNull(),
-})
+export const skillCategoryEnum = pgEnum('skill_category', [
+  'programming',
+  'frameworks',
+  'technology',
+  'tools',
+]);
 
 export const skill = pgTable('skill', {
 	id: serial('id').primaryKey(),
 	name: text('name').notNull(),
+	url: text('url'),
 	image: varchar('image', { length: 256 }),
-	category: integer("category").references(() => category.id)
+	category: skillCategoryEnum('category').notNull(),
 });
 
 export const project = pgTable('project', {
 	id: serial('id').primaryKey(),
 	name: text('name').notNull(),
 	image: varchar('image', { length: 256 }),
-	description: text('description'),
+	showCode: text('showCode'),
+	showLink: text('showLink'),
+	cooperation: text('cooperation'),
 })
+
+export const projectTranslation = pgTable('projectTranslation', {
+  language: varchar('language', { length: 2 }).notNull(),
+  description: text('description').notNull(),
+	contribution: text('contribution').notNull(),
+  projectId: integer('project_id').references(() => project.id).notNull(),
+}, (t) => ({
+  id: primaryKey({ columns: [t.projectId, t.language] }),
+}));
 
 export const projectSkill = pgTable('projectSkill', {
 	project: integer('project').references(() => project.id).notNull(),
 	skill: integer('skill').references(() => skill.id).notNull(),
 })
-
-export const categoryTranslation = pgTable('categoryTranslation', {
-  id: serial('id').primaryKey(),
-  language: varchar('language', { length: 2 }),
-  title: text('title'),
-  subtitle: text('subtitle'),
-  categoryId: integer('category_id').references(() => category.id).notNull(),
-});
-
-export const projectTranslation = pgTable('projectTranslation', {
-  id: serial('id').primaryKey(),
-  language: varchar('language', { length: 2 }),
-  description: text('description'),
-  projectId: integer('project_id').references(() => project.id).notNull(),
-});

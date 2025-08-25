@@ -1,25 +1,13 @@
 <script lang="ts">
   import Header from './Header.svelte';
-  import { categories, type Skill } from '$lib/stores/skills';
   import '../app.css';
 
   import { waitLocale } from 'svelte-i18n';
   import { onMount } from 'svelte';
   import Footer from './Footer.svelte';
 
-  let { children } = $props();
+  let { data, children } = $props();
   let ready = $state(false);
-
-	interface Bubble {
-		skill: Skill;
-		x: number;
-		y: number;
-		speed: number;
-		amplitude: number;
-		frequency: number;
-		phase: number;
-		size: number;
-	}
 
 	function makeBubble(skill: Skill): Bubble {
 		return {
@@ -58,19 +46,20 @@
   onMount(async () => {
     await waitLocale();
     ready = true;
-    bubbles = categories[0].list.map(skill => makeBubble(skill));
+    bubbles = data.skills.map(skill => makeBubble(skill));
+		console.log(data.skills);
 		animate();
   });
 </script>
 
 <div class="app">
 	  <div class="bubble-container">
-    {#each bubbles as b (b.skill.name)}
+    {#each bubbles as b (b)}
       <div
         class="bubble"
         style="transform: translate({b.x}px, {b.y}px); width: {b.size}px; height: {b.size}px;"
       >
-        <img src={b.skill.image} alt={b.skill.name} />
+        <img src={b.skill.image} alt="{b.skill.name}"/>
       </div>
     {/each}
   </div>
@@ -106,6 +95,8 @@
 		max-width: 64rem;
 		margin: 0 auto;
 		box-sizing: border-box;
+		/*	background-*/
+		/*background-image: linear-gradient(180deg, var(--color-bg-white) 0%, var(--color-bg-blue) 90%);*/
 	}
 
 	.bubble-container {

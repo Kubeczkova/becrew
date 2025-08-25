@@ -1,6 +1,4 @@
 <script>
-	// import { t } from '$lib/i18n';
-	import Contact from '$lib/components/contact.svelte';
 	import logo from '$lib/images/left-octopus.png';
 </script>
 

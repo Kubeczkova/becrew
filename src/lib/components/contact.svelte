@@ -2,11 +2,11 @@
   import { t } from '$lib/i18n';
 
   const contact = {
-    phone: "+420 123 456 789",
+    phone: "+420 770 105 939",
     email: "me@example.com",
-    github: "https://github.com/username",
+    github: "https://github.com/Kubeczkova",
     linkedin: "https://www.linkedin.com/in/username/",
-    website: "https://username.dev",
+    ico: "11851554",
     location: "Ostrava, Czech Republic"
   };
 </script>
@@ -36,9 +36,8 @@
       <a href={contact.linkedin} target="_blank">LinkedIn</a>
     </li>
     <li>
-      <!-- Website -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2C6.48 2 2 6.47 2 12s4.48 10 10 10 10-4.47 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79l5.79 5.8v1.92zm6.9-2.54c-.26-.81-.99-1.39-1.9-1.39h-2v-3c0-.55-.45-1-1-1H8V8c0-.55.45-1 1-1h2V4.5c0-.83.67-1.5 1.5-1.5S14 3.67 14 4.5V7h2.5c.83 0 1.5.67 1.5 1.5V17z"/></svg>
-      <a href={contact.website} target="_blank">{contact.website}</a>
+      <!-- ico -->
+      IČO:<a href={contact.ico} target="_blank">{contact.ico}</a>
     </li>
     <li>
       <!-- Location -->
@@ -50,12 +49,9 @@
 
 <style>
 .contact-card {
-  background: var(--color-bg);
   color: var(--color-text);
   padding-bottom: 2rem;
-  border-radius: 1rem;
   width: 100%;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 /* Responsive grid */

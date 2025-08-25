@@ -4,6 +4,9 @@
 	import Skills from '$lib/components/skills.svelte';
 	import Contact from '$lib/components/contact.svelte';
 	import Education from '$lib/components/education.svelte';
+	import Development from '$lib/components/development.svelte';
+
+	export let data;
 </script>
 
 <svelte:head>
@@ -12,18 +15,21 @@
 </svelte:head>
 
 <section>
-	<h1>
-		{$t('landing.name')}
-	</h1>
+	<h1>{$t('landing.name')}</h1>
 	<h3>{$t('landing.tagline')}</h3>
 	<p>dont</p>
 	<p>forget</p>
 	<p>about part</p>
 </section>
 
-<Skills/>
 
-<Projects/>
+
+
+<Skills data={data}/>
+
+<Development />
+
+<Projects data={data}/>
 
 <div>
 	<h1>{$t('menu.experience')}</h1>
@@ -33,9 +39,9 @@
 	<p>vasddddddddd</p>
 </div>
 
-<Education/>
+<Education />
 
-<Contact/>
+<Contact />
 
 <style>
 	section {
@@ -46,7 +52,4 @@
 		flex: 0.6;
 	}
 
-	h1 {
-		width: 100%;
-	}
 </style>
