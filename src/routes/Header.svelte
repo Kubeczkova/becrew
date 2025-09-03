@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { page } from '$app/state';
+	// import { page } from '$app/state';
 	import logo from '$lib/images/right-octopus.png';
 
 	import czFlag from '$lib/images/cz-flag.svg';
@@ -139,7 +139,7 @@
 	/*	top: 0;*/
 	/*	left: calc(50% - var(--size));*/
 	/*	border: var(--size) solid transparent;*/
-	/*	border-top: var(--size) solid var(--color-theme-dark-pink);*/
+	/*	border-top: var(--size) solid var(--color-theme-pink);*/
 	/*}*/
 
 	/*nav a {*/
@@ -157,6 +157,6 @@
 	/*}*/
 
 	/*a:hover {*/
-	/*	color: var(--color-theme-dark-pink);*/
+	/*	color: var(--color-theme-pink);*/
 	/*}*/
 </style>

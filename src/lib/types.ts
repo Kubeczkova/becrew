@@ -8,12 +8,16 @@ export type Skill = {
 
 export type ProjectTranslation = {
   description: string;
+  contribution: string;
 };
 
 export type Project = {
   id: number;
   name: string;
   image: string;
+  showCode: string | null;
+  showLink: string | null;
+  cooperation: string | null;
   skills: number[];
   translations: Record<string, ProjectTranslation>;
 };

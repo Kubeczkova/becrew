@@ -66,14 +66,14 @@
 
 .edu-school {
   font-size: 0.95rem;
-  color: var(--color-text-muted, #555);
+  color: var(--color-theme-pink);
   margin-bottom: 0.3rem;
 }
 
 .edu-years {
   font-size: 0.85rem;
   font-weight: 500;
-  color: var(--color-theme-dark-pink, #e91e63);
+  color: var(--color-theme-pink);
   margin-bottom: 0.8rem;
 }
 
@@ -83,7 +83,7 @@
   gap: 0.4rem;
   font-size: 0.9rem;
   font-weight: 600;
-  color: var(--color-theme-dark-pink, #e91e63);
+  color: var(--color-theme-pink);
   text-decoration: none;
 }
 

@@ -9,8 +9,7 @@
 	--color-bg-green: #42E2B8;
 	--color-bg-orange: #F3C98B;
 	--color-bg-white: #EBF5EE;
-	--color-theme-dark-pink: #D14B8D;
-	--color-theme-light-pink: #FF7BBF;
+	--color-theme-pink: #D14B8D;
 	--color-text: #33363A;
 	--color-bg: #F0F4F2;
 	--column-width: 42rem;
@@ -28,8 +27,7 @@
 	--color-bg-green: #1C6B57;
 	--color-bg-orange: #8C6239;
 	--color-bg-white: #1E1E1E;
-	--color-theme-dark-pink: #A63B6D;
-	--color-theme-light-pink: #E06FAF;
+	--color-theme-pink: #E06FAF;
 	--color-text: #F0F4F2;
 	--color-bg: #33363A;
 	--column-width: 42rem;
@@ -56,7 +54,7 @@ p {
 }
 
 a {
-	color: var(--color-theme-dark-pink);
+	color: var(--color-theme-pink);
 	text-decoration: none;
 }
 

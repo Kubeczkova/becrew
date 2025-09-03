@@ -1,54 +1,66 @@
-<!--<script lang="ts">-->
-<!--  import { t } from '$lib/i18n';-->
-<!--</script>-->
+<script lang="ts">
+  import { t } from '$lib/i18n';
+</script>
 
 <div>
- <h1>Development Practices</h1>
-  <div class="practices-grid">
-    <div class="practice">
-      <h2 class="practice-title">Responsive Design</h2>
-      <div class="practice-header">
-        <img src="https://cdn-icons-png.flaticon.com/512/1829/1829586.png" alt="Responsive Design" />
-        <span class="practice-text">Adaptive layouts</span>
-      </div>
-      <p class="practice-desc">
-        Mobile-first, accessible, and consistent across all devices.
-      </p>
-    </div>
+	<h1>{$t('development.title')}</h1>
+	<div class="practices-grid">
+		<div class="practice">
+			<h2 class="practice-title">{$t('development.responsive_design.title')}</h2>
+			<div class="practice-header">
+				<img
+					src="https://cdn-icons-png.flaticon.com/512/1829/1829586.png"
+					alt="Responsive Design"
+				/>
+				<span class="practice-text">{$t('development.responsive_design.text')}</span>
+			</div>
+			<p class="practice-desc">
+				{$t('development.responsive_design.desc')}
+			</p>
+		</div>
 
-    <div class="practice">
-      <h2 class="practice-title">API Integration</h2>
-      <div class="practice-header">
-        <img src="https://cdn-icons-png.flaticon.com/512/950/950394.png" alt="API Integration" />
-        <span class="practice-text">Seamless data flow</span>
-      </div>
-      <p class="practice-desc">
-        REST & GraphQL integration with secure, efficient connections.
-      </p>
-    </div>
+		<div class="practice">
+			<h2 class="practice-title">{$t('development.api_integration.title')}</h2>
+			<div class="practice-header">
+				<img
+					src="https://cdn-icons-png.flaticon.com/512/950/950394.png"
+					alt="API Integration"
+				/>
+				<span class="practice-text">{$t('development.api_integration.text')}</span>
+			</div>
+			<p class="practice-desc">
+				{$t('development.api_integration.desc')}
+			</p>
+		</div>
 
-    <div class="practice">
-      <h2 class="practice-title">Agile Workflow</h2>
-      <div class="practice-header">
-        <img src="https://cdn-icons-png.flaticon.com/512/4248/4248443.png" alt="Agile Workflow" />
-        <span class="practice-text">Iterative delivery</span>
-      </div>
-      <p class="practice-desc">
-        Scrum & Kanban methods to stay flexible and focused on value.
-      </p>
-    </div>
+		<div class="practice">
+			<h2 class="practice-title">{$t('development.agile_workflow.title')}</h2>
+			<div class="practice-header">
+				<img
+					src="https://cdn-icons-png.flaticon.com/512/4248/4248443.png"
+					alt="Agile Workflow"
+				/>
+				<span class="practice-text">{$t('development.agile_workflow.text')}</span>
+			</div>
+			<p class="practice-desc">
+				{$t('development.agile_workflow.desc')}
+			</p>
+		</div>
 
-    <div class="practice">
-      <h2 class="practice-title">Testing & Debugging</h2>
-      <div class="practice-header">
-        <img src="https://cdn-icons-png.flaticon.com/512/1159/1159633.png" alt="Testing & Debugging" />
-        <span class="practice-text">Quality code</span>
-      </div>
-      <p class="practice-desc">
-        Unit and E2E tests with proactive debugging for reliability.
-      </p>
-    </div>
-  </div>
+		<div class="practice">
+			<h2 class="practice-title">{$t('development.testing_debugging.title')}</h2>
+			<div class="practice-header">
+				<img
+					src="https://cdn-icons-png.flaticon.com/512/1159/1159633.png"
+					alt="Testing & Debugging"
+				/>
+				<span class="practice-text">{$t('development.testing_debugging.text')}</span>
+			</div>
+			<p class="practice-desc">
+				{$t('development.testing_debugging.desc')}
+			</p>
+		</div>
+	</div>
 </div>
 
 <style>
@@ -87,12 +99,12 @@
 .practice-text {
   font-size: 0.95rem;
   font-weight: 600;
-  color: var(--color-theme-dark-pink, #e91e63);
+  color: var(--color-theme-pink);
 }
 
 .practice-desc {
   font-size: 0.9rem;
-  color: var(--color-text-muted, #555);
+  color: var(--color-text);
   line-height: 1.4;
   max-width: 240px;
   margin: 0 auto;

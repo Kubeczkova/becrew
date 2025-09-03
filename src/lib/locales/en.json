@@ -1,20 +1,16 @@
 {
   "menu": {
-    "home": "Home",
-    "about": "About me",
-    "blog": "Blog",
     "skills": "Skills",
     "projects": "Projects",
-    "experience": "Experience",
     "contact": "Contact",
     "education": "Education",
     "other-language": "Čeština"
   },
   "landing": {
     "name": "Nikola Kubeczková",
-    "tagline": "Full Stack Developer | Building Scalable Web Solutions",
-    "intro": "I design and develop web applications that combine clean code, intuitive design, and strong architecture.",
-    "call-to-action": "View My Work",
+    "tagline": "Full Stack Developer | Turning Ideas into Full Web Solutions",
+    "intro": "Experienced and open-minded full-stack Django developer with four years of experience building and deploying web applications, backed by a strong foundation in computer science and applied mathematics. Proficient in Python, Django REST Framework, Vue.js, Nuxt, PostgreSQL, Git, and Docker. Excel at teamwork and collaboration. I am a team player with strong collaboration skills. I take a proactive approach to challenges and have a passion for trying out new technologies.",
+    "call-to-action": "Explore what I do",
     "download-cv": "Download CV"
   },
   "about": {
@@ -34,12 +30,37 @@
     "development": "Development Practices",
     "development_sub": "Non-stack skills that shape how I work"
   },
-  "projects": {
-    "portfolio_desc": "Personal portfolio website built with Svelte and TypeScript to showcase my projects and skills.",
-    "tko_desc": "Full-stack website for a local dance club, built with Vue, Vuetify, Django, and Python. I developed the frontend, backend, and deployment pipeline."
+  "development": {
+    "title": "Development Practices",
+    "responsive_design": {
+      "title": "Responsive Design",
+      "text": "Adaptive layouts",
+      "desc": "Mobile-first, accessible, and consistent across all devices."
+    },
+    "api_integration": {
+      "title": "API Integration",
+      "text": "Seamless data flow",
+      "desc": "REST & GraphQL integration with secure, efficient connections."
+    },
+    "agile_workflow": {
+      "title": "Agile Workflow",
+      "text": "Iterative delivery",
+      "desc": "Scrum & Kanban methods to stay flexible and focused on value."
+    },
+    "testing_debugging": {
+      "title": "Testing & Debugging",
+      "text": "Quality code",
+      "desc": "Unit and E2E tests with proactive debugging for reliability."
+    }
   },
-  "experience": {
-    "company": "Company"
+  "projects": {
+    "show_more": "Show more",
+    "my_role": "My role",
+    "previous": "Previous",
+    "next": "Next",
+    "close": "Close",
+    "github": "GitHub",
+    "live_demo": "Live Demo"
   },
   "contact": {
     "email": "email",

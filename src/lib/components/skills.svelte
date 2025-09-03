@@ -1,22 +1,19 @@
 <script lang="ts">
 	import { t } from '$lib/i18n';
-	import { type Skill, type LayoutData } from '$lib/types';
+	import type { Skill, LayoutData } from '$lib/types';
 
-  let activeIndex = 0;
+  let activeIndex = 1;
 
 	export let data: LayoutData;
 
-	// Extract unique categories from DB results
 	const categories = [...new Set(data.skills.map((s: Skill) => s.category))];
 
-	// Filtered list based on active tab
 	$: filteredSkills = data.skills.filter(
 		(s: Skill) => s.category === categories[activeIndex]
 	);
 </script>
 
 <h1>{$t('menu.skills')}</h1>
-<!-- Category Tabs -->
 <div class="tabs">
 	{#each categories as category, i (category)}
 		<button
@@ -74,7 +71,7 @@
 	}
 
 	.tab:hover {
-		color: var(--color-theme-dark-pink);
+		color: var(--color-theme-pink);
 	}
 
 	.skills-grid {

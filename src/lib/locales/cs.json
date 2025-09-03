@@ -1,20 +1,16 @@
 {
   "menu": {
-    "home": "Domů",
-    "about": "O mě",
-    "blog": "Blog",
     "skills": "Zkušenosti",
     "projects": "Projekty",
-    "experience": "Zkušenosti",
     "contact": "Kontakt",
     "education": "Vzdělání",
     "other-language": "English"
   },
   "landing": {
     "name": "Nikola Kubeczková",
-    "tagline": "Full Stack Developer | Building Scalable Web Solutions",
-    "intro": "I design and develop web applications that combine clean code, intuitive design, and strong architecture.",
-    "call-to-action": "View My Work",
+    "tagline": "Full Stack Vývojář | Proměňuji nápady v komplexní webová řešení",
+    "intro": "Zkušený full-stack Django developer se čtyřletou praxí v tvorbě a nasazování webových aplikací. Vzdělání v informatice a aplikované matematice. Ovládám technologie Python, Django REST Framework, Vue.js, Nuxt, PostgreSQL, Git a Docker. Jsem týmový hráč se schopností efektivní spolupráce. Mám proaktivní přístup k výzvám a vášeň pro zkoušení nových technologií.",
+    "call-to-action": "Prozkoumej, co dělám“",
     "download-cv": "Stáhnout životopis"
   },
   "about": {
@@ -34,15 +30,37 @@
     "development": "Vývojové postupy",
     "development_sub": "Další dovednosti, které formují můj pracovní styl"
   },
-  "projects": {
-    "frontend": "Frontend",
-    "backend": "Backend",
-    "databases": "Databáze",
-    "dev-ops": "DevOps & Tools",
-    "other": "Ostatní"
+  "development": {
+    "title": "Vývojové praktiky",
+    "responsive_design": {
+      "title": "Responzivní design",
+      "text": "Adaptivní rozvržení",
+      "desc": "Mobilní přístup, přístupnost a konzistence na všech zařízeních."
+    },
+    "api_integration": {
+      "title": "Integrace API",
+      "text": "Plynulý tok dat",
+      "desc": "Integrace REST & GraphQL s bezpečnými a efektivními spojeními."
+    },
+    "agile_workflow": {
+      "title": "Agilní workflow",
+      "text": "Iterativní dodávky",
+      "desc": "Metody Scrum a Kanban pro flexibilitu a zaměření na hodnotu."
+    },
+    "testing_debugging": {
+      "title": "Testování a ladění",
+      "text": "Kvalitní kód",
+      "desc": "Unit a E2E testy s proaktivním laděním pro spolehlivost."
+    }
   },
-  "experience": {
-    "company": "Firmy"
+  "projects": {
+    "show_more": "Více informací",
+    "my_role": "Moje role",
+    "previous": "Předchozí",
+    "next": "Další",
+    "close": "Zavřít",
+    "github": "GitHub",
+    "live_demo": "Živá ukázka"
   },
   "contact": {
     "email": "email",

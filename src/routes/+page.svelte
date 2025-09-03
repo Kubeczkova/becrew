@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { t } from '$lib/i18n';
+	import { ChevronDown } from '@lucide/svelte';
+
 	import Projects from '$lib/components/projects.svelte';
 	import Skills from '$lib/components/skills.svelte';
 	import Contact from '$lib/components/contact.svelte';
@@ -17,27 +19,19 @@
 <section>
 	<h1>{$t('landing.name')}</h1>
 	<h3>{$t('landing.tagline')}</h3>
-	<p>dont</p>
-	<p>forget</p>
-	<p>about part</p>
+	<p>{$t('landing.intro')}</p>
+	<h3>
+		<ChevronDown size={30} />
+		{$t('landing.call-to-action')}
+		<ChevronDown size={30} />
+</h3>
 </section>
-
-
-
 
 <Skills data={data}/>
 
 <Development />
 
 <Projects data={data}/>
-
-<div>
-	<h1>{$t('menu.experience')}</h1>
-	<p>vasddddddddd</p>
-	<p>vasddddddddd</p>
-	<p>vasddddddddd</p>
-	<p>vasddddddddd</p>
-</div>
 
 <Education />
 

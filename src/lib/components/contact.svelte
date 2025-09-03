@@ -80,12 +80,12 @@ li {
 }
 
 li a {
-  color: var(--color-theme-dark-pink);
+  color: var(--color-theme-pink);
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 li a:hover {
-  color: var(--color-theme-light-pink);
+  color: var(--color-theme-pink);
 }
 </style>

@@ -33,7 +33,7 @@
 .corner .t {
   grid-column: 1;
   text-align: right;
-  color: var(--color-theme-dark-pink);
+  color: var(--color-theme-pink);
   font-weight: 600;
   line-height: 1;
 }
