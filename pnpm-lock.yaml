@@ -58,8 +58,8 @@ importers:
         specifier: ^3.0.0
         version: 3.11.0(eslint@9.32.0)(svelte@5.37.3)
       globals:
-        specifier: ^16.0.0
-        version: 16.3.0
+        specifier: ^17.0.0
+        version: 17.0.0
       prettier:
         specifier: ^3.4.2
         version: 3.6.2
@@ -1259,6 +1259,10 @@ packages:
     resolution: {integrity: sha512-bqWEnJ1Nt3neqx2q5SFfGS8r/ahumIakg3HcwtNlrVlwXIeNumWn/c7Pn/wKzGhf6SaW6H6uWXLqC30STCMchQ==}
     engines: {node: '>=18'}
 
+  globals@17.0.0:
+    resolution: {integrity: sha512-gv5BeD2EssA793rlFWVPMMCqefTlpusw6/2TbAVMy0FzcG8wKJn4O+NqJ4+XWmmwrayJgw5TzrmWjFgmz1XPqw==}
+    engines: {node: '>=18'}
+
   globalyzer@0.1.0:
     resolution: {integrity: sha512-40oNTM9UfG6aBmuKxk/giHn5nQ8RVz/SS4Ir6zgzOv9/qC3kKZ9v4etGTcJbEl/NyVQH7FGU7d+X1egr57Md2Q==}
 
@@ -2408,12 +2412,6 @@ snapshots:
       gel: 2.1.1
       postgres: 3.4.7
 
-  easy-reactive@1.0.4:
-    dependencies:
-      lodash.clonedeep: 4.5.0
-      lodash.get: 4.4.2
-      lodash.isequal: 4.5.0
-
   env-paths@3.0.0:
     optional: true
 
@@ -2716,6 +2714,8 @@ snapshots:
   globals@14.0.0: {}
 
   globals@16.3.0: {}
+
+  globals@17.0.0: {}
 
   globalyzer@0.1.0: {}
 
