@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@lucide/svelte':
-        specifier: ^0.542.0
-        version: 0.542.0(svelte@5.37.3)
+        specifier: ^0.563.0
+        version: 0.563.0(svelte@5.37.3)
       drizzle-orm:
         specifier: ^0.44.0
         version: 0.44.4(gel@2.1.1)(postgres@3.4.7)
@@ -623,8 +623,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.29':
     resolution: {integrity: sha512-uw6guiW/gcAGPDhLmd77/6lW8QLeiV5RUTsAX46Db6oLhGaVj4lhnPwb184s1bkc8kdVg/+h988dro8GRDpmYQ==}
 
-  '@lucide/svelte@0.542.0':
-    resolution: {integrity: sha512-NuWttxTVfMSURpOxcKiKvoCtma3JtEpcJWzF/0cO69saZfXlv6G8NYAvEEGLmk75YPl+I+ROe+F97WhddM8r2A==}
+  '@lucide/svelte@0.563.0':
+    resolution: {integrity: sha512-IvdKZPzfqkcmS/pJ8dzoXWguNTQl76UqiS7eTAwL6cAvTvqkdU204gFFhAa2oSqCo3KovYmj8SCit/E7FgqyCg==}
     peerDependencies:
       svelte: ^5
 
@@ -2059,7 +2059,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.4
 
-  '@lucide/svelte@0.542.0(svelte@5.37.3)':
+  '@lucide/svelte@0.563.0(svelte@5.37.3)':
     dependencies:
       svelte: 5.37.3
 
