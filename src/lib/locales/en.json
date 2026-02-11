@@ -1,74 +1,53 @@
 {
-  "menu": {
-    "skills": "Skills",
-    "projects": "Projects",
-    "contact": "Contact",
-    "education": "Education",
-    "other-language": "Čeština"
-  },
   "landing": {
-    "name": "Nikola Kubeczková",
-    "tagline": "Full Stack Developer | Turning Ideas into Full Web Solutions",
-    "intro": "Experienced and open-minded full-stack Django developer with four years of experience building and deploying web applications, backed by a strong foundation in computer science and applied mathematics. Proficient in Python, Django REST Framework, Vue.js, Nuxt, PostgreSQL, Git, and Docker. Excel at teamwork and collaboration. I am a team player with strong collaboration skills. I take a proactive approach to challenges and have a passion for trying out new technologies.",
-    "call-to-action": "Explore what I do",
-    "download-cv": "Download CV"
-  },
-  "about": {
-    "professional-summary": "Professional summary",
-    "tech-background": "Tech background",
-    "personal": "Hobbies, Values..."
-  },
-  "skills": {
-    "programming": "Programming Languages",
-    "programming_sub": "Core languages I write in regularly",
-    "frameworks": "Frameworks & Libraries",
-    "frameworks_sub": "Major frameworks I use to build applications",
-    "technology": "Web Technologies",
-    "technology_sub": "Fundamental building blocks of web development",
-    "tools": "Tools & Platforms",
-    "tools_sub": "Tech I use to manage, deploy, and collaborate",
-    "development": "Development Practices",
-    "development_sub": "Non-stack skills that shape how I work"
+    "name": "Beeebooo Crew",
+    "tagline": "Web Technologies Built on Quality",
+    "intro": "We create websites and apps that look great and work reliably. From design to deployment - with modern technologies and a personal touch.",
+    "call-to-action": "Let's go"
   },
   "development": {
-    "title": "Development Practices",
+    "title": "How We Work",
     "responsive_design": {
       "title": "Responsive Design",
-      "text": "Adaptive layouts",
-      "desc": "Mobile-first, accessible, and consistent across all devices."
+      "desc": "Your website will work perfectly on mobile and on large monitors."
     },
     "api_integration": {
-      "title": "API Integration",
-      "text": "Seamless data flow",
-      "desc": "REST & GraphQL integration with secure, efficient connections."
+      "title": "Service Integration",
+      "desc": "We'll connect your website with external services."
     },
     "agile_workflow": {
-      "title": "Agile Workflow",
-      "text": "Iterative delivery",
-      "desc": "Scrum & Kanban methods to stay flexible and focused on value."
+      "title": "Flexible Collaboration",
+      "desc": "We work in short iterations with regular communication and flexibility for changes."
     },
     "testing_debugging": {
-      "title": "Testing & Debugging",
-      "text": "Quality code",
-      "desc": "Unit and E2E tests with proactive debugging for reliability."
+      "title": "Testing & Quality",
+      "desc": "Automated tests and thorough testing ensure your website works without bugs."
     }
   },
   "projects": {
-    "show_more": "Show more",
-    "my_role": "My role",
-    "previous": "Previous",
-    "next": "Next",
-    "close": "Close",
-    "github": "GitHub",
-    "live_demo": "Live Demo"
-  },
+		"title": "Projects",
+		"github": "GitHub",
+		"demo": "Demo",
+		"live": "Visit Website",
+		"more_projects": "More Projects"
+	},
   "contact": {
-    "email": "email",
-    "my-email": "kubeczkova.n@gmail.com",
-    "linked-in": "Linked In",
-    "my-linked-in": "Nikola Kubeczková"
-  },
-  "education": {
-    "education": "Education"
+    "title": "Contact",
+    "name": "Name",
+    "name_placeholder": "Your name",
+    "contact": "Email or phone",
+    "contact_placeholder": "Your email or phone",
+    "message": "Message",
+    "message_placeholder": "Your message",
+    "send": "Send Message",
+    "required": "This field is required",
+    "success": "Message sent successfully! We'll get back to you soon.",
+    "error": "Failed to send message. Please try again.",
+    "validation": {
+      "name_required": "Please enter your name",
+      "contact_required": "Enter email or phone",
+      "message_required": "Tell us what you need",
+      "save_failed": "Oops, something went wrong. Try again in a moment."
+    }
   }
 }

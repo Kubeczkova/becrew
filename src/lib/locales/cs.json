@@ -1,74 +1,53 @@
 {
-  "menu": {
-    "skills": "Zkušenosti",
-    "projects": "Projekty",
-    "contact": "Kontakt",
-    "education": "Vzdělání",
-    "other-language": "English"
-  },
   "landing": {
-    "name": "Nikola Kubeczková",
-    "tagline": "Full Stack Vývojář | Proměňuji nápady v komplexní webová řešení",
-    "intro": "Zkušený full-stack Django developer se čtyřletou praxí v tvorbě a nasazování webových aplikací. Vzdělání v informatice a aplikované matematice. Ovládám technologie Python, Django REST Framework, Vue.js, Nuxt, PostgreSQL, Git a Docker. Jsem týmový hráč se schopností efektivní spolupráce. Mám proaktivní přístup k výzvám a vášeň pro zkoušení nových technologií.",
-    "call-to-action": "Prozkoumej, co dělám“",
-    "download-cv": "Stáhnout životopis"
-  },
-  "about": {
-    "professional-summary": "Professional summary",
-    "tech-background": "Tech background",
-    "personal": "Hobbies, Values..."
-  },
-  "skills": {
-    "programming": "Programovací jazyky",
-    "programming_sub": "Hlavní jazyky, ve kterých pravidelně píšu",
-    "frameworks": "Frameworky & Knihovny",
-    "frameworks_sub": "Hlavní frameworky a knihovny, které používám pro vývoj aplikací",
-    "technology": "Webové technologie",
-    "technology_sub": "Základní stavební kameny webového vývoje",
-    "tools": "Nástroje & Platformy",
-    "tools_sub": "Technologie, které používám ke správě, nasazování a spolupráci",
-    "development": "Vývojové postupy",
-    "development_sub": "Další dovednosti, které formují můj pracovní styl"
+    "name": "Beeebooo Crew",
+    "tagline": "Webové technologie postavené na kvalitě",
+    "intro": "Vytváříme weby a aplikace, které vypadají skvěle a fungují spolehlivě. Od návrhu po nasazení - s moderními technologiemi a osobním přístupem.",
+    "call-to-action": "Pojďme na to"
   },
   "development": {
-    "title": "Vývojové praktiky",
+    "title": "Jak pracujeme",
     "responsive_design": {
       "title": "Responzivní design",
-      "text": "Adaptivní rozvržení",
-      "desc": "Mobilní přístup, přístupnost a konzistence na všech zařízeních."
+      "desc": "Tvůj web bude fungovat perfektně na mobilu i na velkém monitoru."
     },
     "api_integration": {
-      "title": "Integrace API",
-      "text": "Plynulý tok dat",
-      "desc": "Integrace REST & GraphQL s bezpečnými a efektivními spojeními."
+      "title": "Propojení se službami",
+      "desc": "Napojíme tvůj web s externími službami."
     },
     "agile_workflow": {
-      "title": "Agilní workflow",
-      "text": "Iterativní dodávky",
-      "desc": "Metody Scrum a Kanban pro flexibilitu a zaměření na hodnotu."
+      "title": "Flexibilní spolupráce",
+      "desc": "Pracujeme v krátkých iteracích s pravidelnou komunikací a flexibilitou pro změny."
     },
     "testing_debugging": {
-      "title": "Testování a ladění",
-      "text": "Kvalitní kód",
-      "desc": "Unit a E2E testy s proaktivním laděním pro spolehlivost."
+      "title": "Testování a kvalita",
+      "desc": "Automatické testy a důkladné testování zajistí, že tvůj web funguje bez chyb."
     }
   },
   "projects": {
-    "show_more": "Více informací",
-    "my_role": "Moje role",
-    "previous": "Předchozí",
-    "next": "Další",
-    "close": "Zavřít",
+		"title": "Projekty",
     "github": "GitHub",
-    "live_demo": "Živá ukázka"
+		"demo": "Ukázka",
+    "live": "Navštívit web",
+    "more_projects": "Více projektů"
   },
   "contact": {
-    "email": "email",
-    "my-email": "kubeczkova.n@gmail.com",
-    "linked-in": "Linked In",
-    "my-linked-in": "Nikola Kubeczková"
-  },
-  "education": {
-    "education": "Vzdělání"
+    "title": "Kontakt",
+    "name": "Jméno",
+    "name_placeholder": "Tvé jméno",
+    "contact": "Email nebo telefon",
+    "contact_placeholder": "Tvůj email nebo telefon",
+    "message": "Zpráva",
+    "message_placeholder": "Tvá zpráva",
+    "send": "Odeslat zprávu",
+    "required": "Toto pole je povinné",
+    "success": "Zpráva byla úspěšně odeslána! Brzy se ti ozveme.",
+    "error": "Nepodařilo se odeslat zprávu. Zkus to prosím znovu.",
+    "validation": {
+      "name_required": "Zadej prosím své jméno",
+      "contact_required": "Zadej email nebo telefon",
+      "message_required": "Napiš nám, co potřebuješ",
+      "save_failed": "Ouha, něco se pokazilo. Zkus to za chvíli znovu."
+    }
   }
 }

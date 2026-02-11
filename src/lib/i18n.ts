@@ -1,15 +1,38 @@
-import { register, init, getLocaleFromNavigator, locale, t } from 'svelte-i18n';
+import { init, register, getLocaleFromNavigator, locale, t } from 'svelte-i18n';
 
-register('en', () => import('./locales/en.json'));
-register('cs', () => import('./locales/cs.json'));
+import enTranslations from '$lib/locales/en.json';
+import csTranslations from '$lib/locales/cs.json';
 
 function normalizeLocale(loc: string | null) {
-  return loc?.split('-')[0] ?? 'en';
+	return loc?.split('-')[0] ?? 'en';
 }
 
+function getInitialLocale() {
+	if (typeof document !== 'undefined') {
+		const cookieLocale = document.cookie
+			.split('; ')
+			.find((row) => row.startsWith('locale='))
+			?.split('=')[1];
+		if (cookieLocale) {
+			return cookieLocale;
+		}
+	}
+	return normalizeLocale(getLocaleFromNavigator());
+}
+
+// Register translations
+register('en', () => Promise.resolve(enTranslations));
+register('cs', () => Promise.resolve(csTranslations));
+
 init({
-  fallbackLocale: 'en',
-  initialLocale: normalizeLocale(getLocaleFromNavigator())
+	fallbackLocale: 'cs',
+	initialLocale: getInitialLocale()
+});
+
+locale.subscribe((value) => {
+	if (typeof document !== 'undefined' && value) {
+		document.cookie = `locale=${value}; path=/; max-age=31536000`; // 1 year
+	}
 });
 
 export { locale, t };
