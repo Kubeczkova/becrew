@@ -48,7 +48,7 @@
 		]
 	},
 	"dependencies": {
-		"@lucide/svelte": "^0.563.1",
+		"@lucide/svelte": "^1.0.0",
 		"drizzle-orm": "^0.45.0",
 		"flag-icons": "^7.5.0",
 		"postgres": "^3.4.5",
