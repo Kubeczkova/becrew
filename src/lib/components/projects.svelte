@@ -1,17 +1,14 @@
 <script lang="ts">
 	import { t, locale } from '$lib/i18n';
-	import { ChevronRight, ChevronLeft } from '@lucide/svelte';
-	import { resolveRoute } from '$app/paths';
 	import type { Project } from '$lib/data/projects';
 
-	export let projects: Project[] = [];
-	export let want_more: boolean = false;
+	let { projects = [], wantMore = false }: { projects: Project[]; wantMore?: boolean } = $props();
 
-	$: currentLocale = ($locale || 'en') as 'cs' | 'en';
+	const currentLocale = $derived(($locale || 'en') as 'cs' | 'en');
 </script>
 
-<section class="projects">
-	<h1>{$t('projects.title')}</h1>
+<section class="projects" id="projects">
+	<h1><strong>{$t('projects.title')}</strong></h1>
 
 	<div class="projects-grid">
 		{#each projects as project (project.id)}
@@ -23,22 +20,17 @@
 				<p>{project.description[currentLocale]}</p>
 				<div class="project-links">
 					{#if project.github}
-						<a
-							href={project.github}
-							target="_blank"
-							rel="noopener noreferrer"
-							data-sveltekit-reload
-						>
+						<a href={project.github} target="_blank" rel="noopener noreferrer" class="btn-github">
 							{$t('projects.github')}
 						</a>
 					{/if}
 					{#if project.live}
-						<a href={project.live} target="_blank" rel="noopener noreferrer" data-sveltekit-reload>
+						<a href={project.live} target="_blank" rel="noopener noreferrer" class="btn-live">
 							{$t('projects.live')}
 						</a>
 					{/if}
 					{#if project.demo}
-						<a href={project.demo} target="_blank" rel="noopener noreferrer" data-sveltekit-reload>
+						<a href={project.demo} target="_blank" rel="noopener noreferrer" class="btn-demo">
 							{$t('projects.demo')}
 						</a>
 					{/if}
@@ -46,11 +38,12 @@
 			</div>
 		{/each}
 	</div>
-	<!--{#if want_more}-->
-	<!--	<a href={resolveRoute('/projekty')} class="more">-->
-	<!--		<ChevronRight size={30} />-->
-	<!--		<span>{$t('projects.more_projects')}</span>-->
-	<!--		<ChevronLeft size={30} />-->
-	<!--	</a>-->
-	<!--{/if}-->
+
+	{#if wantMore}
+		<div class="more-projects">
+			<a href="/projekty" class="more">
+				<span>{$t('projects.more_projects')}</span>
+			</a>
+		</div>
+	{/if}
 </section>

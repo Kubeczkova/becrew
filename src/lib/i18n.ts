@@ -20,7 +20,6 @@ function getInitialLocale() {
 	return normalizeLocale(getLocaleFromNavigator());
 }
 
-// Register translations
 register('en', () => Promise.resolve(enTranslations));
 register('cs', () => Promise.resolve(csTranslations));
 
@@ -31,7 +30,7 @@ init({
 
 locale.subscribe((value) => {
 	if (typeof document !== 'undefined' && value) {
-		document.cookie = `locale=${value}; path=/; max-age=31536000`; // 1 year
+		document.cookie = `locale=${value}; path=/; max-age=31536000`;
 	}
 });
 

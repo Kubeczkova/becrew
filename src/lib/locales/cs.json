@@ -1,22 +1,45 @@
 {
+  "meta": {
+    "site_name": "Beeebooo Crew",
+    "home_title": "Beeebooo Crew – Webový vývoj na míru",
+    "home_description": "Tvoříme weby a aplikace, které vypadají skvěle a fungují spolehlivě. Od návrhu po nasazení – s moderními technologiemi a osobním přístupem.",
+    "projects_title": "Projekty – Beeebooo Crew",
+    "projects_description": "Prohlédněte si naše realizované projekty. Weby a aplikace vytvořené s důrazem na design, výkon a uživatelský zážitek."
+  },
   "landing": {
-    "name": "Beeebooo Crew",
-    "tagline": "Webové technologie postavené na kvalitě",
-    "intro": "Vytváříme weby a aplikace, které vypadají skvěle a fungují spolehlivě. Od návrhu po nasazení - s moderními technologiemi a osobním přístupem.",
-    "call-to-action": "Pojďme na to"
+    "name": "Jsme vývojáři, kterým záleží na vašem projektu.",
+    "intro": "Víte přesně, kdo na vašem projektu pracuje — od prvního hovoru po spuštění.",
+    "call-to-action": "Pojďme na to",
+    "cta_primary": "Jak pracujeme",
+    "cta_secondary": "Naše projekty"
   },
   "development": {
     "title": "Jak pracujeme",
+    "brief": {
+      "title": "Zadání",
+      "desc": "Poznáme váš projekt, cíle a deadline."
+    },
+    "draft": {
+      "title": "Návrh",
+      "desc": "Odsouhlasíme spolu wireframe a design."
+    },
+    "development": {
+      "title": "Vývoj",
+      "desc": "Kódujeme. Průběžně informujeme."
+    },
+    "deployment": {
+      "title": "Nasazení",
+      "desc": "Spustíme, otestujeme, předáme klíče."
+    }
+  },
+  "practices": {
+    "title": "Co dostanete",
     "responsive_design": {
       "title": "Responzivní design",
       "desc": "Tvůj web bude fungovat perfektně na mobilu i na velkém monitoru."
     },
-    "api_integration": {
-      "title": "Propojení se službami",
-      "desc": "Napojíme tvůj web s externími službami."
-    },
     "agile_workflow": {
-      "title": "Flexibilní spolupráce",
+      "title": "Flexibilní spolupráci",
       "desc": "Pracujeme v krátkých iteracích s pravidelnou komunikací a flexibilitou pro změny."
     },
     "testing_debugging": {
@@ -28,11 +51,14 @@
 		"title": "Projekty",
     "github": "GitHub",
 		"demo": "Ukázka",
-    "live": "Navštívit web",
-    "more_projects": "Více projektů"
+    "live": "Jít na web",
+    "more_projects": "Všechny projekty",
+		"contact_title": "Máš nějaké dotazy?",
+		"contact_subtitle": "Poděl se s námi o ně a my ti rádi odpovíme."
   },
   "contact": {
-    "title": "Kontakt",
+    "title": "Máte projekt?",
+    "subtitle": "Pojďme si o něm říct, nezávazně a zdarma. Odpovíme do 24 hodin.",
     "name": "Jméno",
     "name_placeholder": "Tvé jméno",
     "contact": "Email nebo telefon",
@@ -49,5 +75,14 @@
       "message_required": "Napiš nám, co potřebuješ",
       "save_failed": "Ouha, něco se pokazilo. Zkus to za chvíli znovu."
     }
+  },
+  "error": {
+    "404_title": "Stránka nenalezena",
+    "404_subtitle": "To ale nevadí! Určitě máš něco na srdci.",
+    "500_title": "Chyba serveru",
+    "500_subtitle": "Na serveru se stalo něco neočekávaného.",
+    "generic_title": "Něco se pokazilo",
+    "generic_subtitle": "To ale nevadí! Určitě máš něco na srdci.",
+    "back_home": "← Zpět domů"
   }
 }

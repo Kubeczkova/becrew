@@ -1,19 +1,15 @@
 <script lang="ts">
 	import '../app.css';
-	import Fog from '$lib/components/fog.svelte';
 	import { resolveRoute } from '$app/paths';
 
 	let { children } = $props();
 	import { locale } from '$lib/i18n';
-
-	import 'flag-icons/css/flag-icons.min.css'
 
 	const contact = {
 		name: 'Ing. Nikola Kubeczková',
 		phone: '+420 770 105 939',
 		email: 'kubeczkova.n@gmail.com',
 		ico: '11851554'
-		// location: "Ostrava, Czech Republic"
 	};
 
 	function toggleLocale() {
@@ -21,19 +17,20 @@
 	}
 </script>
 
-<Fog />
-
 <div class="app">
-	<header>
-		<a href={resolveRoute('/')} class="corner">
-			<img src="/favicon.svg" alt="Beeebooo Crew" />
-		</a>
+	<header class="header">
+		<div class="corner">
+			<a href={resolveRoute('/')}>
+				<img src="/favicon.svg" alt="Beeebooo Crew" />
+				<span class="logo-text">Beeebooo Crew</span>
+			</a>
+		</div>
 		<div class="corner lang">
 			<button class="lang-btn" onclick={toggleLocale}>
 				{#if $locale === 'cs'}
-					<span class="fi fi-gb"></span>
+					<span class="lang-text">EN</span>
 				{:else}
-					<span class="fi fi-cz"></span>
+					<span class="lang-text">CZ</span>
 				{/if}
 			</button>
 		</div>
@@ -44,7 +41,7 @@
 	</main>
 
 	<footer>
-		<div class="corner-left">
+		<div class="footer-left">
 			<div class="contact-item">
 				<svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
 					><defs></defs><g id="ic-actions-user">
@@ -57,6 +54,12 @@
 				</svg>
 				<span>{contact.name}</span>
 			</div>
+			<div class="contact-item">
+				<span><strong>IČO</strong> {contact.ico}</span>
+			</div>
+		</div>
+
+		<div class="footer-center">
 			<div class="contact-item">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -85,160 +88,14 @@
 				</svg>
 				<a href={`tel:${contact.phone}`}>{contact.phone}</a>
 			</div>
-			<div class="contact-item">
-				<span><strong>IČO</strong> {contact.ico}</span>
-			</div>
-			<!--			<div class="contact-item">-->
-			<!--				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">-->
-			<!--					<path d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/>-->
-			<!--				</svg>-->
-			<!--				<span>{contact.location}</span>-->
-			<!--			</div>-->
 		</div>
-		<div class="corner-right">
-			<span class="t top">Beeebooo</span>
-			<span class="t bottom">Crew</span>
-			<img src="/favicon.svg" alt="Beeebooo Crew" />
+
+		<div class="footer-right">
+			<div class="footer-logo">
+				<span class="t top">Beeebooo</span>
+				<span class="t bottom">Crew</span>
+				<img src="/favicon.svg" alt="Beeebooo Crew" />
+			</div>
 		</div>
 	</footer>
 </div>
-
-
-<style>
-	.app {
-		position: relative;
-		z-index: 1;
-		min-height: 100vh;
-		display: flex;
-		flex-direction: column;
-	}
-
-	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-
-	footer {
-		position: relative;
-		display: flex;
-		justify-content: space-between;
-		align-items: flex-start;
-		padding: 2rem 1rem;
-		gap: 2rem;
-		backdrop-filter: blur(10px);
-	}
-
-	.corner-left {
-		display: flex;
-		flex-direction: column;
-		gap: 0.75rem;
-		align-items: flex-start;
-	}
-
-	.contact-item {
-		display: flex;
-		align-items: center;
-		gap: 0.5rem;
-		color: var(--color-text);
-		font-size: 0.95rem;
-	}
-
-	.contact-item svg {
-		flex-shrink: 0;
-	}
-
-	.contact-item a {
-		color: var(--color-text);
-		text-decoration: none;
-		transition: color 0.2s ease;
-	}
-
-	.contact-item a:hover {
-		color: var(--color-bg-yellow);
-		text-decoration: underline;
-	}
-
-	.corner-right {
-		position: absolute;
-		right: 1rem;
-		bottom: 1rem;
-
-		display: grid;
-		grid-template-columns: auto max-content;
-		grid-template-rows: 1fr 1fr;
-		column-gap: 0.5rem;
-	}
-
-	.corner-right img {
-		grid-column: 2;
-		grid-row: 1 / span 2;
-		width: 3.5rem;
-		height: 3.5rem;
-		object-fit: contain;
-		padding: 0.25rem;
-	}
-
-	.corner-right .t {
-		grid-column: 1;
-		text-align: right;
-		color: var(--color-text);
-		font-weight: 600;
-		line-height: 1;
-	}
-
-	.corner-right .top {
-		grid-row: 1;
-		align-self: end;
-	}
-
-	.corner-right .bottom {
-		grid-row: 2;
-		align-self: start;
-	}
-
-	@media (max-width: 768px) {
-		footer {
-			flex-direction: column;
-			align-items: flex-start;
-		}
-
-		.corner-left {
-			align-items: flex-start;
-			width: 100%;
-			text-align: left;
-		}
-
-		.contact-item {
-			justify-content: flex-start;
-		}
-
-		.corner-right {
-			margin-left: 0;
-		}
-	}
-
-	.corner.lang {
-		display: flex;
-		align-items: center;
-		border-radius: 20px;
-		justify-content: center;
-	}
-
-	/* circular badge */
-	.lang-btn {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		cursor: pointer;
-	}
-
-	.lang-btn:active {
-		transform: scale(0.97);
-	}
-</style>

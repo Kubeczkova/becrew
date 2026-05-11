@@ -1,4 +1,4 @@
-type TranslateField = {
+export type TranslateField = {
 	cs: string;
 	en: string;
 };
@@ -9,58 +9,21 @@ export type Project = {
 	description: TranslateField;
 	image: string;
 	github: string;
-	demo: string;
 	live: string;
+	demo: string;
+	seoName: string;
 };
 
-export const myProjects: Project[] = [
-	{
-		id: 1,
-		title: {
-			cs: 'Meeple Café',
-			en: 'Meeple Café'
-		},
-		description: {
-			cs: 'Webová stránka pro kavárnu',
-			en: 'Website for a café'
-		},
-		image: '/projects/meeple.webp',
-		github: 'https://git.kropcloud.net/Beeebooo/MEEPLE',
-		demo: '',
-		live: ''
-	},
-	{
-		id: 2,
-		title: {
-			cs: 'Beeebooo Crew',
-			en: 'Beeebooo Crew'
-		},
-		description: {
-			cs: 'Beeebooo Crew web',
-			en: 'Beeebooo Crew website'
-		},
-		image: '/projects/becrew.webp',
-		github: 'https://git.kropcloud.net/Beeebooo/Portfolio',
-		demo: '',
-		live: ''
-	}
-];
+export type ProjectTheme = {
+	pageBg: string; // entire page background + submit button background
+	formBg: string; // contact form background
+	pageText: string; // text/icons on pageBg
+	formText: string; // text on formBg
+};
 
-export const allProjects: Project[] = [
-	...myProjects
-	// {
-	// 	id: 3,
-	// 	title: {
-	// 		cs: 'E-commerce Platforma',
-	// 		en: 'E-commerce Platform'
-	// 	},
-	// 	description: {
-	// 		cs: 'Kompletní e-commerce platforma s funkcemi pro správu produktů, objednávek a uživatelů',
-	// 		en: 'Complete e-commerce platform with features for managing products, orders, and users'
-	// 	},
-	// 	image: 'https://via.placeholder.com/400x250',
-	// 	github: '',
-	// 	demo: '',
-	//	live: '',
-	// }
-];
+export const defaultTheme: ProjectTheme = {
+	pageBg: '#1a1a1a',
+	formBg: '#ffffff',
+	pageText: '#f4d03f',
+	formText: '#1a1a1a'
+};

@@ -1,53 +1,88 @@
 {
+  "meta": {
+    "site_name": "Beeebooo Crew",
+    "home_title": "Beeebooo Crew – Custom Web Development",
+    "home_description": "We create websites and apps that look great and work reliably. From design to deployment – with modern technologies and a personal touch.",
+    "projects_title": "Projects – Beeebooo Crew",
+    "projects_description": "Browse our completed projects. Websites and applications built with a focus on design, performance and user experience."
+  },
   "landing": {
     "name": "Beeebooo Crew",
-    "tagline": "Web Technologies Built on Quality",
     "intro": "We create websites and apps that look great and work reliably. From design to deployment - with modern technologies and a personal touch.",
-    "call-to-action": "Let's go"
+    "call-to-action": "Let's go",
+    "cta_primary": "How we work",
+    "cta_secondary": "Our projects"
   },
   "development": {
     "title": "How We Work",
-    "responsive_design": {
-      "title": "Responsive Design",
-      "desc": "Your website will work perfectly on mobile and on large monitors."
+    "brief": {
+      "title": "Brief",
+      "desc": "We get to know your project, goals, and deadline."
     },
-    "api_integration": {
-      "title": "Service Integration",
-      "desc": "We'll connect your website with external services."
+    "draft": {
+      "title": "Design",
+      "desc": "We will agree on the wireframe and design together."
     },
-    "agile_workflow": {
-      "title": "Flexible Collaboration",
-      "desc": "We work in short iterations with regular communication and flexibility for changes."
+    "development": {
+      "title": "Development",
+      "desc": "We are coding. We are continuously informing."
     },
-    "testing_debugging": {
-      "title": "Testing & Quality",
-      "desc": "Automated tests and thorough testing ensure your website works without bugs."
+    "deployment": {
+      "title": "Deployment",
+      "desc": "We will launch, test, hand over the keys."
     }
   },
+  "practices": {
+		"title": "What you get",
+		"responsive_design": {
+			"title": "Responsive Design",
+			"desc": "Your website will work perfectly on mobile and on large monitors."
+		},
+		"agile_workflow": {
+			"title": "Flexible Collaboration",
+			"desc": "We work in short iterations with regular communication and flexibility for changes."
+		},
+		"testing_debugging": {
+			"title": "Testing & Quality",
+			"desc": "Automated tests and thorough testing ensure your website works without bugs."
+		}
+	},
   "projects": {
 		"title": "Projects",
 		"github": "GitHub",
 		"demo": "Demo",
 		"live": "Visit Website",
-		"more_projects": "More Projects"
+		"more_projects": "All projects",
+		"contact_title": "Do you have any questions?",
+		"contact_subtitle": "Share with us and we will gladly answer."
 	},
   "contact": {
-    "title": "Contact",
-    "name": "Name",
-    "name_placeholder": "Your name",
-    "contact": "Email or phone",
-    "contact_placeholder": "Your email or phone",
-    "message": "Message",
-    "message_placeholder": "Your message",
-    "send": "Send Message",
-    "required": "This field is required",
-    "success": "Message sent successfully! We'll get back to you soon.",
-    "error": "Failed to send message. Please try again.",
-    "validation": {
-      "name_required": "Please enter your name",
-      "contact_required": "Enter email or phone",
-      "message_required": "Tell us what you need",
-      "save_failed": "Oops, something went wrong. Try again in a moment."
+		"title": "Got a project?",
+		"subtitle": "Let's talk about it, no-obligation and for free. We will respond within 24 hours.",
+		"name": "Name",
+		"name_placeholder": "Your name",
+		"contact": "Email or phone",
+		"contact_placeholder": "Your email or phone",
+		"message": "Message",
+		"message_placeholder": "Your message",
+		"send": "Send Message",
+		"required": "This field is required",
+		"success": "Message sent successfully! We'll get back to you soon.",
+		"error": "Failed to send message. Please try again.",
+		"validation": {
+			"name_required": "Please enter your name",
+			"contact_required": "Enter email or phone",
+			"message_required": "Tell us what you need",
+			"save_failed": "Oops, something went wrong. Try again in a moment."
     }
+  },
+  "error": {
+    "404_title": "Page Not Found",
+    "404_subtitle": "No worries! I'm sure you have something on your mind.",
+    "500_title": "Server Error",
+    "500_subtitle": "Something unexpected happened on our end.",
+    "generic_title": "Something Went Wrong",
+    "generic_subtitle": "No worries! I'm sure you have something on your mind.",
+    "back_home": "← Back Home"
   }
 }
