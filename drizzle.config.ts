@@ -14,7 +14,8 @@ export default defineConfig({
 		host: getEnv('DB_HOST'),
 		user: getEnv('DB_USER'),
 		password: getEnv('DB_PASSWORD'),
-		database: getEnv('DB_NAME')
+		database: getEnv('DB_NAME'),
+		ssl: 'require'
 	},
 	verbose: true,
 	strict: true
