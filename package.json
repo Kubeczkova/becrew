@@ -46,11 +46,6 @@
     "vite": "^7.0.4",
     "wrangler": "^4.97.0"
   },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild"
-    ]
-  },
   "dependencies": {
     "@lucide/svelte": "^1.0.0",
     "drizzle-orm": "^0.45.0",
