@@ -7,8 +7,8 @@
     "projects_description": "Prohlédněte si naše realizované projekty. Weby a aplikace vytvořené s důrazem na design, výkon a uživatelský zážitek."
   },
   "landing": {
-    "name": "Jsme vývojáři, kterým záleží na vašem projektu.",
-    "intro": "Víte přesně, kdo na vašem projektu pracuje — od prvního hovoru po spuštění.",
+    "name": "Tvorba webových stránek a systémů na míru",
+    "intro": "Od jednoduché vizitky až po složité systémy. Srozumitelně, rychle a spolehlivě.",
     "call-to-action": "Pojďme na to",
     "cta_primary": "Jak pracujeme",
     "cta_secondary": "Naše projekty"
@@ -21,15 +21,15 @@
     },
     "draft": {
       "title": "Návrh",
-      "desc": "Odsouhlasíme spolu wireframe a design."
+      "desc": "Odsouhlasíme spolu návrh a design."
     },
     "development": {
       "title": "Vývoj",
-      "desc": "Kódujeme. Průběžně informujeme."
+      "desc": "Tvoříme a průběžně informujeme."
     },
     "deployment": {
       "title": "Nasazení",
-      "desc": "Spustíme, otestujeme, předáme klíče."
+      "desc": "Spustíme, otestujeme a předáme."
     }
   },
   "practices": {

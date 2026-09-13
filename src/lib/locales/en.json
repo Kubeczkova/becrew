@@ -7,8 +7,8 @@
     "projects_description": "Browse our completed projects. Websites and applications built with a focus on design, performance and user experience."
   },
   "landing": {
-    "name": "Beeebooo Crew",
-    "intro": "We create websites and apps that look great and work reliably. From design to deployment - with modern technologies and a personal touch.",
+    "name": "Creation of custom websites and systems",
+    "intro": "From a simple business card to complex systems. Understandably, quickly and reliably.",
     "call-to-action": "Let's go",
     "cta_primary": "How we work",
     "cta_secondary": "Our projects"
@@ -25,11 +25,11 @@
     },
     "development": {
       "title": "Development",
-      "desc": "We are coding. We are continuously informing."
+      "desc": "We create and continuously inform."
     },
     "deployment": {
       "title": "Deployment",
-      "desc": "We will launch, test, hand over the keys."
+      "desc": "We will launch, test and hand over."
     }
   },
   "practices": {
