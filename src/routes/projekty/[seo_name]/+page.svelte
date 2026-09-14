@@ -29,7 +29,7 @@
 		<div class="project-hero-image">
 			<img src={data.project.image} alt={projectTitle} />
 		</div>
-		<div class="project-hero-content">
+		<div class="project-hero-text">
 			<h1 class="project-hero-title">{projectTitle}</h1>
 			<p class="project-hero-desc">{projectDesc}</p>
 		</div>

@@ -760,13 +760,6 @@ footer {
 	gap: 2rem;
 }
 
-.project-image {
-	width: 100%;
-	height: 200px;
-	overflow: hidden;
-	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
-
 .project-image img {
 	width: 100%;
 	height: 100%;
@@ -1114,50 +1107,47 @@ footer {
 }
 
 .project-hero {
-	position: relative;
-	height: 300px;
-	overflow: hidden;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	gap: 3rem;
+	max-width: var(--max-width);
+	margin: 0 auto;
+	padding: 4rem 2rem;
 }
 
-.project-hero-image {
-	position: absolute;
-	inset: 0;
+.project-hero-image,
+.project-hero-text {
+	flex: 1 1 50%;
+	min-width: 0;
 }
 
 .project-hero-image img {
+	display: block;
 	width: 100%;
-	height: 100%;
+	aspect-ratio: 4 / 3;
 	object-fit: cover;
-	object-position: top;
-	filter: brightness(0.5);
+	border-radius: 12px;
 }
 
-.project-hero-content {
-	position: relative;
-	z-index: 1;
-	height: 100%;
+.project-hero-text {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-end;
-	padding: 2.5rem 2rem;
-	max-width: var(--max-width);
-	margin: 0 auto;
-	gap: 0.5rem;
+	gap: 1rem;
 }
 
 .project-hero-title {
 	font-size: 2.5rem;
 	font-weight: 700;
-	color: var(--theme-page-text, var(--color-bg-yellow));
+	color: var(--theme-page-bg, var(--color-bg-yellow));
 	margin: 0;
 	text-align: left;
-	border-bottom: 3px solid var(--theme-page-text, var(--color-bg-yellow));
 	padding-bottom: 0.25rem;
 	width: fit-content;
 }
 
 .project-hero-desc {
-	color: var(--theme-page-text, var(--color-bg-yellow));
+	color: var(--theme-page-bg, var(--color-bg-yellow));
 	opacity: 0.75;
 	margin: 0;
 	font-size: 1rem;
@@ -1176,12 +1166,12 @@ footer {
 	font-size: 1.75rem;
 	font-weight: 700;
 	margin: 0 0 0.5rem;
-	color: var(--theme-form-text, var(--color-bg-black));
+	color: var(--theme-page-bg, var(--color-bg-black));
 	text-align: center;
 }
 
 .project-contact-sub {
-	color: var(--theme-form-text, #666);
+	color: var(--theme-page-bg, #666);
 	opacity: 0.7;
 	margin: 0 0 2rem;
 	text-align: center;
@@ -1194,7 +1184,7 @@ footer {
 
 .project-page .contact .submit-btn {
 	background: var(--theme-page-bg, var(--color-bg-black));
-	color: var(--theme-page-text, var(--color-bg-yellow));
+	color: var(--theme-form-bg, var(--color-bg-yellow));
 }
 
 .project-page .contact .submit-btn:hover {
@@ -1202,16 +1192,20 @@ footer {
 }
 
 .project-page .contact .submit-btn :global(svg) {
-	color: var(--theme-page-text, var(--color-bg-yellow));
+	color: var(--theme-page-bg, var(--color-bg-yellow));
 }
 
 @media (max-width: 768px) {
 	.project-hero {
-		height: 220px;
+		flex-direction: column;
+		text-align: center;
+		padding: 2.5rem 1.25rem;
+		gap: 1.5rem;
 	}
 
 	.project-hero-title {
 		font-size: 1.75rem;
+		margin: 0 auto;
 	}
 
 	.project-contact-section {
